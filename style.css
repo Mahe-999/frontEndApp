@@ -48,7 +48,7 @@ section{
     position: fixed;
     top:0; left:0; right:0;
     background-color: rgb(133, 177, 235);
-    z-index:1;
+    z-index:1000;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -123,7 +123,7 @@ h2:before{
     font-size: 1.1rem;
     text-align: center;
     padding:0 .5rem 0 .5rem;
-    background:orangered;
+    background:rgb(237, 6, 6);
     border-radius: 50%;
     opacity: 0;
 }
@@ -149,9 +149,9 @@ h2.zero:before{
 }
 
 .nav-bar .login-form h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    color:black;
+    color:rgb(34, 7, 241);
 }
 
 .nav-bar .login-form .box{
@@ -173,13 +173,13 @@ h2.zero:before{
 
 .nav-bar .login-form p a{
     color:blue;
+    font-weight: 600;
     text-decoration: underline;
 }
 
 /*shopping-cart */
 
 .nav-bar .shopping-cart{
-
     position:absolute;
     top:110%;
     right:-110%;
@@ -206,7 +206,7 @@ h2.zero:before{
     width:5rem;
 }
 
-.nav-bar .shopping-cart div h3{
+.nav-bar .shopping-cart div h2{
     padding:1rem;
     display:flex;
     color:blue;
@@ -220,6 +220,7 @@ h2.zero:before{
 
 .nav-bar .shopping-cart .stars{
     color:orange;
+    /* border: 1px solid rgb(236, 233, 233); */
 }
 
 .nav-bar .shopping-cart #trash{
@@ -253,7 +254,7 @@ h2.zero:before{
     width:60rem;
 }
 
-.home .sub-main h3{
+.home.sub-main h3{
     font-size:2rem;
     color:black;
 }
@@ -307,7 +308,6 @@ h2.zero:before{
     text-align: center;
     box-shadow: 2rem 2rem 2rem 1rem lightgray; 
 }
-
 .features .box-container .box:hover{
     box-shadow:2rem 2rem 2rem 1rem rgb(160,171,250);
 }
@@ -328,8 +328,23 @@ h2.zero:before{
     line-height: 1.8;
     padding:1rem 0;
 }
-
-
+.features .box-container .box a{
+    background-color: lightblue;
+    color:rgb(17,44,248);
+    justify-content: center;
+    margin: 2px 25%;
+    padding:1.1rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.features .box-container .box a:hover{
+    background-color: blue;
+    color:white;
+}
 
 
 
@@ -411,7 +426,7 @@ h2.zero:before{
 
 .products .product-slider .box .stars i{
     font-size: 1.7rem;
-    color:yellow;
+    color:rgba(216, 206, 12, 0.966);
     padding:.5rem 0;
 }
 
